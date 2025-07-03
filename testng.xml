@@ -5,6 +5,7 @@
     <classes>
       <class name="testCases.TC00X_GetTopCities"/>
       <class name="testCases.T001_homePage"/>
+      <class name="testCases.T003_corporateWellness"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

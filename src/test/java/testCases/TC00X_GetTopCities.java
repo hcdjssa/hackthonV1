@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObject.TopCitiesPage;
-import pageObject.diagnosticPage;
+import pageObject.homePage;
 
 
 
@@ -13,12 +13,10 @@ public class TC00X_GetTopCities extends BaseClass{
 	
 	@Test
 	public void getTopCities() throws InterruptedException {
-	diagnosticPage dp = new diagnosticPage(driver);
+		homePage hp = new homePage(driver);
 		
-		dp.clickSurgeriesTab();
-		Thread.sleep(10000);
-		dp.clickLabTestsTab();
-		Thread.sleep(5000);
+		hp.clickSurgeriesTab();
+		hp.clickLabTestsTab();
 		
 		TopCitiesPage tcp = new TopCitiesPage(driver);
 		

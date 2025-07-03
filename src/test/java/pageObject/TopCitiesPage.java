@@ -16,7 +16,8 @@ public class TopCitiesPage extends basePage{
 @FindBy(xpath = "//div[text() = 'TOP CITIES']/following-sibling::ul/li/div[2]")
 List<WebElement> nameWebEleList;
 
-	public List<String> getNames(){
+
+public List<String> getNames(){
 		
 		List<String> nameList = new ArrayList<>();
 		

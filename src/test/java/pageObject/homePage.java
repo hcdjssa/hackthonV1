@@ -28,8 +28,21 @@ public class homePage extends basePage {
 	@FindBy(xpath="//*[text()='Health & Wellness Plans']")
 	WebElement healthbut;
 	
-	@FindBy(xpath="//*[text()='Surgeries']")
-	WebElement surgeries;
+	@FindBy(linkText = "Surgeries")
+	WebElement surgeriesTab;
+
+	@FindBy(linkText = "Lab Tests")
+	WebElement labtestsTab;
+
+	public void clickSurgeriesTab() {
+		surgeriesTab.click();
+	}
+
+	public void clickLabTestsTab() {
+		labtestsTab.click();
+	}
+	
+
 	
 	public void cityLoc() {
 		locSearch.clear();

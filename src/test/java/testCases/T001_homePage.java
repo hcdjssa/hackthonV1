@@ -10,15 +10,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 import pageObject.homePage;
 import pageObject.resultPage;
 
-public class T001_homePage {
-	public static void main(String args[]) throws InterruptedException {
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.practo.com/");
-		driver.manage().window().maximize();
+public class T001_homePage extends BaseClass {
+	
+	@Test
+	public void getResult()
+	{
 		homePage hp = new homePage(driver);
 		hp.cityLoc();
 		JavascriptExecutor js=(JavascriptExecutor) driver;;

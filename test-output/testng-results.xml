@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-03T10:09:04 IST" name="Suite" finished-at="2025-07-03T10:10:39 IST" duration-ms="95106">
+  <suite started-at="2025-07-03T10:16:35 IST" name="Suite" finished-at="2025-07-03T10:18:15 IST" duration-ms="99739">
     <groups>
     </groups>
-    <test started-at="2025-07-03T10:09:04 IST" name="Test" finished-at="2025-07-03T10:10:39 IST" duration-ms="95106">
+    <test started-at="2025-07-03T10:16:35 IST" name="Test" finished-at="2025-07-03T10:18:15 IST" duration-ms="99739">
       <class name="testCases.T001_homePage">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.T001_homePage@6743e411]" started-at="2025-07-03T10:09:49 IST" name="setup" finished-at="2025-07-03T10:09:58 IST" duration-ms="8937" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.T001_homePage@6743e411]" started-at="2025-07-03T10:17:14 IST" name="setup" finished-at="2025-07-03T10:17:24 IST" duration-ms="10107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getResult()[pri:0, instance:testCases.T001_homePage@6743e411]" started-at="2025-07-03T10:09:58 IST" name="getResult" finished-at="2025-07-03T10:10:35 IST" duration-ms="37553" status="PASS">
+        <test-method signature="getResult()[pri:0, instance:testCases.T001_homePage@6743e411]" started-at="2025-07-03T10:17:24 IST" name="getResult" finished-at="2025-07-03T10:18:11 IST" duration-ms="47156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.T001_homePage@6743e411]" started-at="2025-07-03T10:10:35 IST" name="tearDown" finished-at="2025-07-03T10:10:39 IST" duration-ms="3672" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.T001_homePage@6743e411]" started-at="2025-07-03T10:18:11 IST" name="tearDown" finished-at="2025-07-03T10:18:15 IST" duration-ms="4025" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.T001_homePage -->
       <class name="testCases.TC00X_GetTopCities">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC00X_GetTopCities@682b2fa]" started-at="2025-07-03T10:09:04 IST" name="setup" finished-at="2025-07-03T10:09:13 IST" duration-ms="9417" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC00X_GetTopCities@682b2fa]" started-at="2025-07-03T10:16:35 IST" name="setup" finished-at="2025-07-03T10:16:49 IST" duration-ms="13595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getTopCities()[pri:0, instance:testCases.TC00X_GetTopCities@682b2fa]" started-at="2025-07-03T10:09:13 IST" name="getTopCities" finished-at="2025-07-03T10:09:46 IST" duration-ms="32438" status="PASS">
+        <test-method signature="getTopCities()[pri:0, instance:testCases.TC00X_GetTopCities@682b2fa]" started-at="2025-07-03T10:16:49 IST" name="getTopCities" finished-at="2025-07-03T10:17:08 IST" duration-ms="19482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTopCities -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC00X_GetTopCities@682b2fa]" started-at="2025-07-03T10:09:46 IST" name="tearDown" finished-at="2025-07-03T10:09:49 IST" duration-ms="3020" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC00X_GetTopCities@682b2fa]" started-at="2025-07-03T10:17:08 IST" name="tearDown" finished-at="2025-07-03T10:17:13 IST" duration-ms="5282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

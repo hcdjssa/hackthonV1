@@ -1,9 +1,6 @@
 package testCases;
 
-import java.io.IOException;
 import java.time.Duration;
-
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -14,9 +11,7 @@ public class BaseClass {
 	public WebDriver driver;
 	
 	@BeforeClass
-	public void setup() throws IOException {
-		
-		
+	public void setup() {
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.practo.com/");

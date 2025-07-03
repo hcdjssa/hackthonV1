@@ -31,12 +31,24 @@ public class homePage extends basePage {
 	@FindBy(xpath="//*[text()='Surgeries']")
 	WebElement surgeries;
 	
+	@FindBy(xpath="//a[text() = 'Health & Wellness Plans']")
+	WebElement dropDownHealthAndWellness;
+	
+	@FindBy(xpath="//span[text()='For Corporates']")
+	WebElement downArrow;
+	
 	public void cityLoc() {
 		locSearch.clear();
 		locSearch.sendKeys("Banglore");
 		wait.until(ExpectedConditions.elementToBeClickable(locCity)).click();
 		hosType.sendKeys("Hospital");
 		wait.until(ExpectedConditions.elementToBeClickable(locHos)).click();
+	}
+	
+	public void selectHealthAndWellness() throws InterruptedException
+	{
+		wait.until(ExpectedConditions.elementToBeClickable(downArrow)).click();
+		wait.until(ExpectedConditions.elementToBeClickable(dropDownHealthAndWellness)).click();
 	}
 	
 }

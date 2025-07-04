@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+  
+  <!-- ✅ Add this listener block -->
+  <listeners>
+    <listener class-name="utilities.TestListener"/>
+  </listeners>
+
   <test thread-count="5" name="Test">
     <classes>
       <class name="testCases.TC00X_GetTopCities"/>
@@ -8,5 +14,5 @@
       <class name="testCases.T001_homePage"/>
       <class name="testCases.T003_corporateWellness"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+</suite>

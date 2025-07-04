@@ -51,15 +51,15 @@ public class loginPage extends basePage{
     }
 
   
-    public void isSubmitButtonEnabled() {
+    public String isSubmitButtonEnabled() {
          if (wait.until(ExpectedConditions.visibilityOf(submitButton)).isEnabled())
     {
-    	System.out.println("Entered information is valid");
+    	return ("Entered information is valid");
     }
          
     else
     {
-    	System.out.println("Validation is triggered on entering an invalid input");
+    	return ("Validation is triggered on entering an invalid input");
     }
          
     }

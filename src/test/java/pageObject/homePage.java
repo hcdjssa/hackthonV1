@@ -41,10 +41,12 @@ public class homePage extends basePage {
 	WebElement downArrow;
 
 	public void clickSurgeriesTab() {
+		wait.until(ExpectedConditions.elementToBeClickable(surgeriesTab));
 		surgeriesTab.click();
 	}
 
 	public void clickLabTestsTab() {
+		wait.until(ExpectedConditions.elementToBeClickable(labtestsTab));
 		labtestsTab.click();
 	}
 

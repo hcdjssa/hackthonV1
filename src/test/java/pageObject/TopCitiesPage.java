@@ -6,6 +6,7 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class TopCitiesPage extends basePage{
 
@@ -13,20 +14,21 @@ public class TopCitiesPage extends basePage{
 		super(driver);
 	}
 	
+@FindBy(xpath = "//div[text() = 'TOP CITIES']")
+WebElement topCitiesText;	
+	
 @FindBy(xpath = "//div[text() = 'TOP CITIES']/following-sibling::ul/li/div[2]")
 List<WebElement> nameWebEleList;
-
 
 public List<String> getNames(){
 		
 		List<String> nameList = new ArrayList<>();
 		
-		int size = nameWebEleList.size();
+		wait.until(ExpectedConditions.visibilityOf(topCitiesText));
 		
-		for(int i = 0;i < size;i++) {
-			String name = nameWebEleList.get(i).getText();
+		for(WebElement nameOfCity : nameWebEleList) {
+			String name = nameOfCity.getText();
 			nameList.add(name.trim());
-			System.out.println(name.trim());
 		}
 		return nameList;
 	}

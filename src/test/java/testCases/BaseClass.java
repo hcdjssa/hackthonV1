@@ -1,6 +1,8 @@
 package testCases;
 
 import java.time.Duration;
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -9,6 +11,7 @@ import org.testng.annotations.BeforeClass;
 public class BaseClass {
 	
 	public WebDriver driver;
+	public static List<String> names;
 	
 	@BeforeClass
 	public void setup() {

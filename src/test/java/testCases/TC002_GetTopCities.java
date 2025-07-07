@@ -9,7 +9,7 @@ import pageObject.homePage;
 
 
 
-public class TC00X_GetTopCities extends BaseClass{
+public class TC002_GetTopCities extends BaseClass{
 	
 	@Test
 	public void getTopCities() throws InterruptedException {

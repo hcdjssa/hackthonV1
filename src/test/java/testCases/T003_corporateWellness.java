@@ -12,13 +12,15 @@ public class T003_corporateWellness extends BaseClass{
 
 	@Test
 	public void fillDetails() throws InterruptedException, IOException {
+		logger.info("**** starting T003_corporateWellness ****");
 		loginPage dp = new loginPage (driver);
 		homePage hp = new homePage (driver);
+		logger.info("**** health and wellness is clicked ****");
 		hp.selectHealthAndWellness();
 		String path = "testData/ReadAndWriteData.xlsx";
 		ExcelUtility obj = new ExcelUtility(path);
 		String sheet = "input";
-		int r = 1;
+		logger.info("**** details are entered and valid/invalid msg is filled ****");
 		for(int i=0;i<3;i++) {
 			String name = obj.getCellData(sheet, i, 0);
 			String as = obj.getCellData(sheet, i, 1);
@@ -31,12 +33,8 @@ public class T003_corporateWellness extends BaseClass{
 			obj.setCellData(sheet, i, 6, result);
 			driver.navigate().refresh();
 		}
-		
-		
-		
-		//dp.fillForm("harshini", "as", "9176700576", "harshini.com", "<500", "Taking a demo");
-		
-		Assert.assertTrue(true);
+		logger.info("**** ending T003_corporateWellness ****");
+	
 	}
 
 }

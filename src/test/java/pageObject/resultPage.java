@@ -8,6 +8,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class resultPage extends basePage{
 	
@@ -72,5 +73,8 @@ public class resultPage extends basePage{
 		System.out.println(resultList.size());
 		return ans;
 	}
-	
+	public void scrollD(int i) {
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight * 0.75);");
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='left']//li["+((10*i)+1)+"]")));
+	}
 }

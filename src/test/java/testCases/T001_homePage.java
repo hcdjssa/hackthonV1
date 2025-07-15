@@ -20,26 +20,33 @@ public class T001_homePage extends BaseClass {
 	@Test
 	public void getResult() throws IOException
 	{
+		logger.info("**** starting T001_homePage ****");
+		List<WebElement> ans = new ArrayList<>();
 		homePage hp = new homePage(driver);
-		hp.cityLoc();
-		JavascriptExecutor js=(JavascriptExecutor) driver;;
-		js.executeScript("window.scrollTo(0, document.body.scrollHeight * 0.75);");
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@class='left']//li[11]")));
-		
 		resultPage rp = new resultPage(driver);
-		List<WebElement> ans = rp.takeList();
-		List<String> s = new ArrayList<>();
-		for(WebElement e : ans) {
-			s.add(e.findElement(By.tagName("h2")).getText());
+		
+		logger.info("**** city and hospitals details are entered ****");
+		hp.cityLoc();
+		for(int i=1;i<2;i++) {
+			rp.scrollD(i);
 		}
+		
+		logger.info("**** hospital details are being fetched ****");
+		ans  = rp.takeList();
+		List<String> hosName = new ArrayList<>();
+		for(WebElement e : ans) {
+			hosName.add(e.findElement(By.tagName("h2")).getText());
+		}
+		
+		logger.info("**** hospital details are entered into excel file ****");
 		String path = "testData/ReadAndWriteData.xlsx";
 		ExcelUtility obj = new ExcelUtility(path);
-		int r = 1;
+		int row = 1;
 		
-		for(int j =0 ;j<s.size();j++) {
-			obj.setCellData("hospitalName", j, r, s.get(j));
+		for(int col =0 ;col<hosName.size();col++) {
+			obj.setCellData("hospitalName", col, row, hosName.get(col));
 		}
 		System.out.println(ans.size());
+		logger.info("**** ending T001_homePage ****");
 	}
 }

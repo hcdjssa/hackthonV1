@@ -8,6 +8,11 @@ import utilities.ExcelUtility;
 import pageObject.loginPage;
 import pageObject.homePage;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.io.FileHandler;
+import java.io.File;
+
 public class T003_corporateWellness extends BaseClass{
 
 	@Test
@@ -30,6 +35,10 @@ public class T003_corporateWellness extends BaseClass{
 			String demo =obj.getCellData(sheet, i, 5);
 			dp.fillForm(name, as, number, email, range, demo);
 			String result = dp.isSubmitButtonEnabled();
+			
+			File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		    File dest = new File("screenshots/iteration_" + i + ".png");
+		    src.renameTo(dest);
 			obj.setCellData(sheet, i, 6, result);
 			driver.navigate().refresh();
 		}

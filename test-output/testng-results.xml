@@ -1,67 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-04T09:23:36 IST" name="Suite" finished-at="2025-07-04T09:25:47 IST" duration-ms="131314">
+  <suite started-at="2025-07-16T13:53:42 IST" name="Suite" finished-at="2025-07-16T13:56:06 IST" duration-ms="144193">
     <groups>
     </groups>
-    <test started-at="2025-07-04T09:23:36 IST" name="Test" finished-at="2025-07-04T09:25:47 IST" duration-ms="131314">
-      <class name="testCases.T001_homePage">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.T001_homePage@233795b6]" started-at="2025-07-04T09:24:15 IST" name="setup" finished-at="2025-07-04T09:24:26 IST" duration-ms="11135" status="PASS">
+    <test started-at="2025-07-16T13:53:42 IST" name="Test" finished-at="2025-07-16T13:56:06 IST" duration-ms="144193">
+      <class name="testCases.T002_GetTopCities">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.T002_GetTopCities@62727399]" started-at="2025-07-16T13:54:59 IST" name="setup" finished-at="2025-07-16T13:55:12 IST" duration-ms="13116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getResult()[pri:0, instance:testCases.T001_homePage@233795b6]" started-at="2025-07-04T09:24:26 IST" name="getResult" finished-at="2025-07-04T09:25:20 IST" duration-ms="53695" status="PASS">
+        <test-method signature="getTopCities()[pri:0, instance:testCases.T002_GetTopCities@62727399]" started-at="2025-07-16T13:55:12 IST" name="getTopCities" finished-at="2025-07-16T13:55:18 IST" duration-ms="5921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTopCities -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.T002_GetTopCities@62727399]" started-at="2025-07-16T13:55:18 IST" name="tearDown" finished-at="2025-07-16T13:55:22 IST" duration-ms="4303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.T002_GetTopCities -->
+      <class name="testCases.T001_homePage">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.T001_homePage@2da59753]" started-at="2025-07-16T13:53:42 IST" name="setup" finished-at="2025-07-16T13:53:55 IST" duration-ms="12813" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getResult()[pri:0, instance:testCases.T001_homePage@2da59753]" started-at="2025-07-16T13:53:55 IST" name="getResult" finished-at="2025-07-16T13:54:53 IST" duration-ms="57972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.T001_homePage@233795b6]" started-at="2025-07-04T09:25:20 IST" name="tearDown" finished-at="2025-07-04T09:25:25 IST" duration-ms="5269" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.T001_homePage@2da59753]" started-at="2025-07-16T13:54:53 IST" name="tearDown" finished-at="2025-07-16T13:54:59 IST" duration-ms="5351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.T001_homePage -->
-      <class name="testCases.TC00X_GetTopCities">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC00X_GetTopCities@31190526]" started-at="2025-07-04T09:23:36 IST" name="setup" finished-at="2025-07-04T09:23:49 IST" duration-ms="13581" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="getTopCities()[pri:0, instance:testCases.TC00X_GetTopCities@31190526]" started-at="2025-07-04T09:23:49 IST" name="getTopCities" finished-at="2025-07-04T09:23:53 IST" duration-ms="4086" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getTopCities -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC00X_GetTopCities@31190526]" started-at="2025-07-04T09:23:53 IST" name="tearDown" finished-at="2025-07-04T09:23:57 IST" duration-ms="3965" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC00X_GetTopCities -->
       <class name="testCases.T003_corporateWellness">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.T003_corporateWellness@3eb738bb]" started-at="2025-07-04T09:25:25 IST" name="setup" finished-at="2025-07-04T09:25:36 IST" duration-ms="10844" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.T003_corporateWellness@4d9ac0b4]" started-at="2025-07-16T13:55:22 IST" name="setup" finished-at="2025-07-16T13:55:33 IST" duration-ms="11000" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="fillDetails()[pri:0, instance:testCases.T003_corporateWellness@3eb738bb]" started-at="2025-07-04T09:25:36 IST" name="fillDetails" finished-at="2025-07-04T09:25:43 IST" duration-ms="6938" status="PASS">
+        <test-method signature="fillDetails()[pri:0, instance:testCases.T003_corporateWellness@4d9ac0b4]" started-at="2025-07-16T13:55:33 IST" name="fillDetails" finished-at="2025-07-16T13:56:00 IST" duration-ms="26840" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.T003_corporateWellness@3eb738bb]" started-at="2025-07-04T09:25:43 IST" name="tearDown" finished-at="2025-07-04T09:25:47 IST" duration-ms="4348" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.T003_corporateWellness@4d9ac0b4]" started-at="2025-07-16T13:56:00 IST" name="tearDown" finished-at="2025-07-16T13:56:06 IST" duration-ms="6520" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.T003_corporateWellness -->
-      <class name="testCases.TC00X_WriteExcelTopCities">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC00X_WriteExcelTopCities@f5958c9]" started-at="2025-07-04T09:23:57 IST" name="setup" finished-at="2025-07-04T09:24:08 IST" duration-ms="10870" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="writeExcelData()[pri:0, instance:testCases.TC00X_WriteExcelTopCities@f5958c9]" started-at="2025-07-04T09:24:08 IST" name="writeExcelData" finished-at="2025-07-04T09:24:11 IST" duration-ms="2612" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- writeExcelData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC00X_WriteExcelTopCities@f5958c9]" started-at="2025-07-04T09:24:11 IST" name="tearDown" finished-at="2025-07-04T09:24:15 IST" duration-ms="3873" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC00X_WriteExcelTopCities -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
